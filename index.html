@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO - Moda Urbana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">ZERO</h1>
+            <ul class="nav-links">
+                <li><a href="#home" data-page="home">Home</a></li>
+                <li><a href="#collection" data-page="collection">Coleção</a></li>
+                <li><a href="#about" data-page="about">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <span class="icon" data-action="search">🔍</span>
+            <span class="icon" data-action="cart">🛒</span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="page-content active fade-in">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 class="animated-text" data-text="CÓDIGO INVICTO"></h2>
+                    <p>Coleção 2025. Conectando o analógico ao digital.</p>
+                    <a href="#collection" class="cta-button">Ver Coleção</a>
+                </div>
+            </section>
+            <section class="content-section featured-products">
+                <h3 class="section-title">PRODUTOS EM ALTA</h3>
+                <div class="product-grid">
+                    <div class="product-item" data-id="1" data-name="Jaqueta 'Glitch'" data-price="499.90">
+                        <img src="syna.jpg" alt="Jaqueta Glitch">
+                        <h4>Jaqueta 'Syna'</h4>
+                        <p>R$ 499,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="2" data-name="Calça Cargo Tech" data-price="289.90">
+                        <img src="orange.jpg" alt="Calça Cargo Tech">
+                        <h4>Moletom 'Syna'</h4>
+                        <p>R$ 289,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="3" data-name="Tênis 'Cyber'" data-price="550.00">
+                        <img src="tech.jpg" alt="Tênis Cyber">
+                        <h4>Tênis 'Cyber'</h4>
+                        <p>R$ 550,00</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="collection" class="page-content">
+            <section class="content-section">
+                <h2>Nossa Coleção</h2>
+                <div class="product-grid">
+                    <div class="product-item" data-id="1" data-name="Jaqueta 'Glitch'" data-price="499.90">
+                        <img src="https://via.placeholder.com/300x400.png?text=Jaqueta+Glitch" alt="Jaqueta Glitch">
+                        <h4>Jaqueta 'syna'</h4>
+                        <p>R$ 499,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="2" data-name="Calça Cargo Tech" data-price="289.90">
+                        <img src="https://via.placeholder.com/300x400.png?text=Calca+Cargo+Tech" alt="Calça Cargo Tech">
+                        <h4>Calça Cargo T</h4>
+                        <p>R$ 289,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="3" data-name="Tênis 'Cyber'" data-price="550.00">
+                        <img src="https://via.placeholder.com/300x400.png?text=Tenis+Cyber" alt="Tênis Cyber">
+                        <h4>Tênis 'Cyber'</h4>
+                        <p>R$ 550,00</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="4" data-name="Moletom 'Código'" data-price="219.90">
+                        <img src="https://via.placeholder.com/300x400.png?text=Moletom+Codigo" alt="Moletom Codigo">
+                        <h4>Moletom 'Código'</h4>
+                        <p>R$ 219,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="product-item" data-id="5" data-name="Camiseta 'Subsolo'" data-price="129.90">
+                        <img src="https://via.placeholder.com/300x400.png?text=Camiseta+Subsolo" alt="Camiseta Subsolo">
+                        <h4>Camiseta 'Subsolo'</h4>
+                        <p>R$ 129,90</p>
+                        <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="about" class="page-content">
+            <section class="content-section">
+                <h2>Sobre a ZERO</h2>
+                <p>ZERO é uma marca que nasceu da fusão entre a tecnologia e o caos urbano. Nossas peças são projetadas para o futuro, com um toque de rebeldia underground.</p>
+                <p>Acreditamos que a moda é uma forma de expressão e, por isso, cada design reflete a nossa visão de um mundo onde o analógico e o digital coexistem. Nossa missão é oferecer roupas que não apenas vestem, mas que contam uma história.</p>
+            </section>
+        </section>
+
+    </main>
+
+    <div id="cart-popup" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Carrinho de Compras</h3>
+            <ul id="cart-items">
+                </ul>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-value">R$ 0,00</span>
+            </div>
+            <button class="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 ZERO. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+<div id="cart-popup" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items">
+            </ul>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-value">R$ 0,00</span>
+        </div>
+        <button class="checkout-button">Finalizar Compra</button>
+    </div>
+</div>
